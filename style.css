@@ -133,37 +133,37 @@ section .title::after{
 }
 
 /* menu btn styling */
-.nav-link_home{
+#nav-link_home{
     color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
 }
-.nav-link_about{
+#nav-link_about{
   color: #fff;
   font-size: 23px;
   cursor: pointer;
   display: none;
 }
-.nav-link_resume{
+#nav-link_resume{
   color: #fff;
   font-size: 23px;
   cursor: pointer;
   display: none;
 }
-.nav-link_project{
+#nav-link_project{
   color: #fff;
   font-size: 23px;
   cursor: pointer;
   display: none;
 }
-.nav-link_contact{
+#nav-link_contact{
   color: #fff;
   font-size: 23px;
   cursor: pointer;
   display: none;
 }
-.nav-link_skills{
+#nav-link_skills{
     color: #fff;
     font-size: 23px;
     cursor: pointer;
@@ -826,15 +826,15 @@ footer span a:hover{
 .menu-btn i.active:before{
     content: "\f00d";
 }
-    .nav-link_home{
+    #nav-link_home{
         display: block;
         z-index: 999;
     }
-    .nav-link_project{
+    #nav-link_project{
       display: block;
       z-index: 999;
   }
-  .nav-link_resume{
+  #nav-link_resume{
     display: block;
     z-index: 999;
 }
@@ -842,24 +842,24 @@ footer span a:hover{
   display: block;
   z-index: 999;
 }
-.nav-link_skills{
+#nav-link_skills{
   display: block;
   z-index: 999;
 }
 
-.nav-link_home i.active:before{
+#nav-link_home i.active:before{
         content: "\f00d";
     }
-    .nav-link_project i.active:before{
+    #nav-link_project i.active:before{
       content: "\f00d";
   }
-  .nav-link_resume i.active:before{
+  #nav-link_resume i.active:before{
     content: "\f00d";
 }
-.nav-link_about i.active:before{
+#nav-link_about i.active:before{
   content: "\f00d";
 }
-.nav-link_skills i.active:before{
+#nav-link_skills i.active:before{
   content: "\f00d";
 }
     #nav-menu  .menu{

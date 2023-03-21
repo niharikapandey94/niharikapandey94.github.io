@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
     $('.nav-link_resume').click(function(){
         $('#nav-menu .menu').toggleClass("active");
-        $('.nav-link_resume i').toggleClass("active");
+        $('nav-link_resume i').toggleClass("active");
     });
     $('.nav-link_contact').click(function(){
         $('#nav-menu .menu').toggleClass("active");
@@ -50,7 +50,7 @@ $(document).ready(function(){
     });
     $('.nav-link_skills').click(function(){
         $('#nav-menu .menu').toggleClass("active");
-        $('.nav-link_contact i').toggleClass("active");
+        $('.nav-link_skills i').toggleClass("active");
     });
     $('.menu-btn').click(function(){
         $('#nav-menu .menu').toggleClass("active");
