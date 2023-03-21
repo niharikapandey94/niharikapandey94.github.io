@@ -150,9 +150,23 @@
     <section class="github"id="github">
         
             <h2 class="title">GITHUB CONTRIBUTION CALENDER</h2>
+            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+            </script>
+        
+            <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+            <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+        
+        
+            <div class="calendar react-activity-calendar " id="calendwer"></div>
            
-                
-                    <img  class="react-activity-calendar" src="https://ghchart.rshah.org/niharikapandey94" alt=""width=80%>
+            <script>
+                // const GitHubCalendar = require("github-calender")
+                GitHubCalendar(".calendar", "niharikapandey94");
+          
+                // or enable responsive functionality:
+                GitHubCalendar(".calendar", "niharikapandey94", { responsive: true });
+                   </script>
+                    <!-- <img  class="react-activity-calendar" src="https://ghchart.rshah.org/niharikapandey94" alt=""width=80%> -->
 
               
                 
