@@ -133,37 +133,37 @@ section .title::after{
 }
 
 /* menu btn styling */
-#nav-link_home{
+.nav-link.home{
     color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
 }
-#nav-link_about{
+.nav-link.about{
   color: #fff;
   font-size: 23px;
   cursor: pointer;
   display: none;
 }
-#nav-link_resume{
+.nav-link.resume{
   color: #fff;
   font-size: 23px;
   cursor: pointer;
   display: none;
 }
-#nav-link_project{
+.nav-link.project{
   color: #fff;
   font-size: 23px;
   cursor: pointer;
   display: none;
 }
-#nav-link_contact{
+.nav-link.contact{
   color: #fff;
   font-size: 23px;
   cursor: pointer;
   display: none;
 }
-#nav-link_skills{
+.nav-link.skills{
     color: #fff;
     font-size: 23px;
     cursor: pointer;
@@ -205,7 +205,7 @@ section .title::after{
 
 
 /* home section styling */
-.home{
+#home{
     display: flex;
     /* flex-direction: row; */
     background: black;
@@ -217,32 +217,32 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
    
 }
-.home .max-width{
+#home .max-width{
   width: 100%;
   display: flex;
   /* flex-direction: row; */
   margin-top: 10%;
 }
-.home .max-width .row{
+#home .max-width .row{
   margin-right: 0;
 }
-.home .home-content .text-1{
+#home .home-content .text-1{
     font-size: 27px;
 }
-.home .home-content .text-2{
+#home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .text-3{
+#home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
+#home .home-content .text-3 span{
     color: crimson;
     font-weight: 500;
 }
-.home .home-content a{
+#home .home-content a{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -255,7 +255,7 @@ section .title::after{
     transition: all 0.3s ease;
     margin-bottom:50% ;
 }
-.home .home-content a:hover{
+#home .home-content a:hover{
     color: crimson;
     background: none;
 }
@@ -268,10 +268,10 @@ section .title::after{
    
 
 }
-.home .home-content .right{
+#home .home-content .right{
     width: 55%;
 }
-.home .home-content .left{
+#home .home-content .left{
     width: 45%;
 }
 /* #home_img{
@@ -783,7 +783,7 @@ footer span a:hover{
         height: 350px;
         width: 350px;
     }
-    .home .max-width{
+    #home .max-width{
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -796,7 +796,7 @@ footer span a:hover{
     .max-width{
         padding: 0 50px;
     }
-    .home .max-width{
+    #home .max-width{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -810,7 +810,7 @@ footer span a:hover{
         display:flex;
         flex-direction: column;
     }
-    .home .max-width{
+    #home .max-width{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -826,40 +826,40 @@ footer span a:hover{
 .menu-btn i.active:before{
     content: "\f00d";
 }
-    #nav-link_home{
+    .nav-link.home{
         display: block;
         z-index: 999;
     }
-    #nav-link_project{
+    .nav-link.project{
       display: block;
       z-index: 999;
   }
-  #nav-link_resume{
+  .nav-link.resume{
     display: block;
     z-index: 999;
 }
-.nav-link_about{
+.nav-link.about{
   display: block;
   z-index: 999;
 }
-#nav-link_skills{
+.nav-link.skills{
   display: block;
   z-index: 999;
 }
 
-#nav-link_home i.active:before{
+.nav-link.home i.active:before{
         content: "\f00d";
     }
-    #nav-link_project i.active:before{
+    .nav-link.project i.active:before{
       content: "\f00d";
   }
-  #nav-link_resume i.active:before{
+  .nav-link.resume i.active:before{
     content: "\f00d";
 }
-#nav-link_about i.active:before{
+.nav-link.about i.active:before{
   content: "\f00d";
 }
-#nav-link_skills i.active:before{
+.nav-link.skills i.active:before{
   content: "\f00d";
 }
     #nav-menu  .menu{
@@ -884,13 +884,13 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
-    .home .home-content .text-2{
+    #home .home-content .text-2{
         font-size: 70px;
     }
-    .home .home-content .text-3{
+    #home .home-content .text-3{
         font-size: 35px;
     }
-    .home .home-content a{
+    #home .home-content a{
         font-size: 10px;
         /* padding: 10px 30px; */
     }
@@ -927,19 +927,19 @@ footer span a:hover{
     .max-width{
         padding: 0 23px;
     }
-    .home .home-content .text-2{
+    #home .home-content .text-2{
         font-size: 60px;
     }
-    .home .home-content .text-3{
+    #home .home-content .text-3{
         font-size: 32px;
     }
-    .home .home-content a{
+    #home .home-content a{
         font-size: 10px;
     }
     .skills .serv-content .skills-card{
         width: 100%;
     }
-    .home .max-width{
+    #home .max-width{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -949,7 +949,7 @@ footer span a:hover{
 }
 
 @media (max-width: 100px) {
-    .home .max-width{
+    #home .max-width{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -961,10 +961,10 @@ footer span a:hover{
         display:flex;
         flex-direction: column;
     }
-    .home .home-content .text-2{
+    #home .home-content .text-2{
         font-size: 50px;
     }
-    .home .home-content .text-3{
+#home .home-content .text-3{
         font-size: 27px;
     }
     .about .about-content .right .text,
@@ -991,7 +991,7 @@ footer span a:hover{
     }
 }
 @media (max-width: 500px) {
-    .home .max-width{
+#home .max-width{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1003,10 +1003,10 @@ footer span a:hover{
         display:flex;
         flex-direction: column;
     }
-    .home .home-content .text-2{
+    #home .home-content .text-2{
         font-size: 50px;
     }
-    .home .home-content .text-3{
+    #home .home-content .text-3{
         font-size: 27px;
     }
     .about .about-content .right .text,

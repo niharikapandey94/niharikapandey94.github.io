@@ -28,29 +28,29 @@ $(document).ready(function(){
     });
 
     // toggle menu/navbar script
-    $('.nav-link_home').click(function(){
+    $('.nav-link home').click(function(){
         $('#nav-menu .menu').toggleClass("active");
-        $('.nav-link_home i').toggleClass("active");
+        $('.nav-link home i').toggleClass("active");
     });
-    $('.nav-link_project').click(function(){
+    $('.nav-link projects').click(function(){
         $('#nav-menu .menu').toggleClass("active");
-        $('.nav-link_project i').toggleClass("active");
+        $('.nav-link projects i').toggleClass("active");
     });
-    $('.nav-link_about').click(function(){
+    $('.nav-link about').click(function(){
         $('#nav-menu .menu').toggleClass("active");
-        $('.nav-link_about i').toggleClass("active");
+        $('.nav-link about i').toggleClass("active");
     });
-    $('.nav-link_resume').click(function(){
+    $('.nav-link resume').click(function(){
         $('#nav-menu .menu').toggleClass("active");
-        $('nav-link_resume i').toggleClass("active");
+        $('.nav-link resume i').toggleClass("active");
     });
-    $('.nav-link_contact').click(function(){
+    $('.nav-link contact').click(function(){
         $('#nav-menu .menu').toggleClass("active");
-        $('.nav-link_contact i').toggleClass("active");
+        $('.nav-link contact i').toggleClass("active");
     });
     $('.nav-link_skills').click(function(){
         $('#nav-menu .menu').toggleClass("active");
-        $('.nav-link_skills i').toggleClass("active");
+        $('.nav-link skills i').toggleClass("active");
     });
     $('.menu-btn').click(function(){
         $('#nav-menu .menu').toggleClass("active");
