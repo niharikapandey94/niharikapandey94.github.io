@@ -145,12 +145,19 @@ section .title::after{
   cursor: pointer;
   display: none;
 }
-.nav-link.resume{
-  color: #fff;
-  font-size: 23px;
-  cursor: pointer;
-  display: none;
+#resume-button-1{
+    background-color:crimson;
+    /* padding: 3%; */
+    margin: 0;
+    /* height: 400%; */
+     width: 60%; 
+    
+    /* border-radius: 5px;  */
+    border: none;
+    cursor: pointer;
+    
 }
+
 .nav-link.project{
   color: #fff;
   font-size: 23px;
@@ -179,7 +186,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background:crimson;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -274,6 +281,18 @@ section .title::after{
 #home .home-content .left{
     width: 45%;
 }
+#resume-button-2{
+     background-color:black ;
+    /* padding: 3%; */
+    margin: 0;
+    /* height: 400%; */
+     width: 5%; 
+    
+    /* border-radius: 5px;  */
+    border: none;
+    cursor: pointer;
+    
+}
 /* #home_img{
     width: 100%;
 } */
@@ -323,15 +342,15 @@ section .title::after{
 }
 
 /* services section styling */
-.skills, .Project{
+#skills, .Project{
     color:#fff;
     background: #111;
 }
-.skills .title::before,
+#skills .title::before,
 .teams .title::before{
     background: #fff;
 }
-.skills .title::after,
+#skills .title::after,
 .teams .title::after{
     background: #111;
     content: "what i learned";

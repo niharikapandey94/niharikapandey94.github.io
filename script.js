@@ -40,9 +40,9 @@ $(document).ready(function(){
         $('#nav-menu .menu').toggleClass("active");
         $('#nav-link_about i').toggleClass("active");
     });
-    $('#nav-link_resume').click(function(){
+    $('#resume-link-1').click(function(){
         $('#nav-menu .menu').toggleClass("active");
-        $('#nav-link_resume i').toggleClass("active");
+        $('#resume-link-1 i').toggleClass("active");
     });
     $('#nav-link_contact').click(function(){
         $('#nav-menu .menu').toggleClass("active");
