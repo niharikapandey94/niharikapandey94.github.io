@@ -641,7 +641,7 @@ section .title::after{
 .right form .button-area button{
   color: #fff;
   display: block;
-  width: 160px!important;
+  width: 160px;
   height: 45px;
   outline: none;
   font-size: 18px;
@@ -675,15 +675,20 @@ footer span a:hover{
 
 
 
-#project {
+#projects {
     background-color: black;
+   
+
   }
-  
+  .newp{
+    margin-top:0%;
+  }
   #project #h3 {
     text-align: center;
     padding-top: 5%;
     font-size: 3vw;
     color: white;
+   
   }
   
   /* Desktop screen */
@@ -692,7 +697,7 @@ footer span a:hover{
     display: none;
     width: 94%;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 60%;
   }
   
   .work {
