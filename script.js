@@ -28,29 +28,29 @@ $(document).ready(function(){
     });
 
     // toggle menu/navbar script
-    $('#nav-link_home').click(function(){
+    $('.nav-link_home').click(function(){
         $('#nav-menu .menu').toggleClass("active");
-        $('#nav-link_home i').toggleClass("active");
+        $('.nav-link_home i').toggleClass("active");
     });
-    $('#nav-link_project').click(function(){
+    $('.nav-link_project').click(function(){
         $('#nav-menu .menu').toggleClass("active");
-        $('#nav-link_project i').toggleClass("active");
+        $('.nav-link_project i').toggleClass("active");
     });
-    $('#nav-link_about').click(function(){
+    $('.nav-link_about').click(function(){
         $('#nav-menu .menu').toggleClass("active");
-        $('#nav-link_about i').toggleClass("active");
+        $('.nav-link_about i').toggleClass("active");
     });
-    $('#resume-link-1').click(function(){
+    $('.nav-link_resume').click(function(){
         $('#nav-menu .menu').toggleClass("active");
-        $('#resume-link-1 i').toggleClass("active");
+        $('.nav-link_resume i').toggleClass("active");
     });
-    $('#nav-link_contact').click(function(){
+    $('.nav-link_contact').click(function(){
         $('#nav-menu .menu').toggleClass("active");
-        $('#nav-link_contact i').toggleClass("active");
+        $('.nav-link_contact i').toggleClass("active");
     });
-    $('#nav-link_skills').click(function(){
+    $('.nav-link_skills').click(function(){
         $('#nav-menu .menu').toggleClass("active");
-        $('#nav-link_skills i').toggleClass("active");
+        $('.nav-link_contact i').toggleClass("active");
     });
     $('.menu-btn').click(function(){
         $('#nav-menu .menu').toggleClass("active");
@@ -66,7 +66,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-     strings:  ["Java Backend Developer!", "Problem  Solver","Fast Learner"],
+        strings:  ["Java Backend Developer!", "Problem  Solver","Fast Learner"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -95,5 +95,18 @@ $(document).ready(function(){
         }
     });
 });
+var image = document.getElementById("image");
 
+var images = ["imgae/project1 (2).png", "imgae/project1 (3).png", "imgae/project1 (4).png","imgae/project1 (5).png","imgae/project1 (7).jpeg"];
 
+var index = 0;
+
+function updateImage() {
+
+image.src = images[index];
+
+index = (index + 1) % images.length;
+
+}
+
+setInterval(updateImage, 2000);
