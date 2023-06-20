@@ -53,7 +53,7 @@
     <section class="home" id="home">
        
         <div class="max-width">
-            <div class="home_img">
+            <div class="home-img">
                 <img src="imgae\WhatsApp Image 2023-03-07 at 19.24.32.jpeg" alt="" > 
             </div>
             <div class="home-content">
@@ -105,56 +105,56 @@
                 <div class="skills-card">
                     <div class="box">
                         <div class="skills-card-img"><img src="imgae\java.png" width="58%"></div> 
-                        <h1 id="skills-card-name">Java</h1>
+                        <h1 id="skills-card-name" class="skills-card-name">Java</h1>
                     </div>
                 </div>
                 <div class="skills-card">
                     <div class="box">
                         <div class="skills-card-img"><img src="imgae\sql.png" width="58%"></div>
-                        <h1 id="skills-card-name">Sql</h1>
+                        <h1 id="skills-card-name" class="skills-card-name">Sql</h1>
                     </div>
                 </div>
                 <div class="skills-card">
                     <div class="box">
                         <div class="skills-card-img"><img src="imgae\hiberante.png" width="82%"></div>  
-                        <h1 id="skills-card-name">Hiberante</h1>
+                        <h1 id="skills-card-name" class="skills-card-name">Hiberante</h1>
                     </div>
                 </div>
                 <div class="skills-card">
                     <div class="box">
                         <div class="skills-card-img"><img src="imgae\javscript.png" width="50%"></div>
-                        <h1 id="skills-card-name">Javascript</h1>
+                        <h1 id="skills-card-name" class="skills-card-name">Javascript</h1>
                     </div>
                 </div>
                 <div class="skills-card">
                     <div class="box">
                         <div class="skills-card-img"><img src="imgae\html.png" width="58%"></div>
 
-                        <h1 id="skills-card-name">Html</h1>
+                        <h1 id="skills-card-name" class="skills-card-name">Html</h1>
                     </div>
                 </div>
                 <div class="skills-card">
                     <div class="box">
                         <div class="skills-card-img"><img src="imgae\css.png" width="49%"></div>
-                        <h1 id="skills-card-name">Css</h1>
+                        <h1 id="skills-card-name" class="skills-card-name">Css</h1>
                     </div>
                 </div>
                 <div class="skills-card">
                     <div class="box">
                         <div class="skills-card-img"><img src="imgae\github.png" width="95%"></div>
-                        <h1 id="skills-card-name">Git</h1>
+                        <h1 id="skills-card-name" class="skills-card-name">Git</h1>
                     </div>
                 </div>
                 <div class="skills-card">
                     <div class="box">
                         <div class="skills-card-img"><img src="imgae\netlify image.png" width="82%"></div>
-                        <h1 id="skills-card-name">Netlify</h1>
+                        <h1 id="skills-card-name" class="skills-card-name">Netlify</h1>
                     </div>
                 </div>
                 <div class="skills-card">
                     <div class="box">
                         <div class="skills-card-img"><img src="imgae\postman.png"  width="55%"></div>
-                        <h1 id="skills-card-name">Postman</h1>
+                        <h1 id="skills-card-name" class="skills-card-name">Postman</h1>
                     </div>
                 </div>
                 
@@ -185,36 +185,49 @@
 
 
 
-    <section class="github"id="github">
-        
-            <h2 class="title">GITHUB CONTRIBUTION CALENDER</h2>
-           
-                
-                    <img src="https://ghchart.rshah.org/niharikapandey94" alt=""width=80%>
+    <section class="github" id="github">
 
-              
-                
-                 
-                
-           </section>
+        <h2 class="title">GITHUB CONTRIBUTION CALENDER</h2>
+        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+        </script>
 
-           <section class="github1" id="github1">
+        <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+        <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 
-            <h2 class="title">GITHUB STATISTICS</h2>
-            <div id="git-img">
-                <img id="github-streak-stats"
-                    src="https://github-readme-streak-stats.herokuapp.com/?user=niharikapandey94&count_private=true&show_icons=true&custom_title=Github&theme=algolia&hide_border=true&bg_color=0,000000,130F40&layout=compact&border_radius=10"
-                    alt="" width=30%>
-                <img id="github-top-langs"
-                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=niharikapandey94&count_private=true&theme=algolia&bg_color=0,000000,130F40&layout=compact&border_radius=8&hide_border=true&langs_count=20&hide=hack,swift,kotlin,objective-c"
-                    alt="" width=26.9%>
-                <img id="github-stats-card"
-                    src="https://github-readme-stats.vercel.app/api?username=niharikapandey94&show_icons=true&count_private=true&theme=algolia&bg_color=0,000000,130F40&layout=compact&border_radius=10&hide_border=true"
-                    alt="" width=30%>
-    
-            </div>
-        </section>
-    
+
+        <div class="calendar react-activity-calendar " id="calendwer"></div>
+
+        <script>
+            // const GitHubCalendar = require("github-calender")
+            GitHubCalendar(".calendar", "niharikapandey94");
+
+            // or enable responsive functionality:
+            GitHubCalendar(".calendar", "niharikapandey94", { responsive: true });
+        </script>
+        <!-- <img  class="react-activity-calendar" src="https://ghchart.rshah.org/niharikapandey94" alt=""width=80%> -->
+
+
+
+
+
+    </section>
+
+    <section class="github1" id="github1">
+
+        <h2 class="title">GITHUB STATISTICS</h2>
+        <div id="git-img">
+            <img id="github-streak-stats"
+                src="https://github-readme-streak-stats.herokuapp.com/?user=niharikapandey94&count_private=true&show_icons=true&custom_title=Github&theme=algolia&hide_border=true&bg_color=0,000000,130F40&layout=compact&border_radius=10"
+                alt="" width=30%>
+            <img id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=niharikapandey94&count_private=true&theme=algolia&bg_color=0,000000,130F40&layout=compact&border_radius=8&hide_border=true&langs_count=20&hide=hack,swift,kotlin,objective-c"
+                alt="" width=26.9%>
+            <img id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=niharikapandey94&show_icons=true&count_private=true&theme=algolia&bg_color=0,000000,130F40&layout=compact&border_radius=10&hide_border=true"
+                alt="" width=30%>
+
+        </div>
+    </section>
 
     
                   
@@ -247,7 +260,7 @@
                                
                                 
                                 <a  class="project-github-link" target="_blank" href="https://github.com/niharikapandey94/snotty-wash-4238-backend">GitHub</a>
-                                <a class="project-deployed-link"target="_blank" href="https://delicious-pizza.netlify.app">Live</a>
+                                <a class="project-deployed-link"target="_blank" href="https://tangerine-dragon-6b2241.netlify.app">Live</a>
                             </div>
         
         
