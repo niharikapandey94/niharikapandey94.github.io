@@ -95,18 +95,3 @@ $(document).ready(function(){
         }
     });
 });
-var image = document.getElementById("image");
-
-var images = ["imgae/project1 (2).png", "imgae/project1 (3).png", "imgae/project1 (4).png","imgae/project1 (5).png","imgae/project1 (7).jpeg"];
-
-var index = 0;
-
-function updateImage() {
-
-image.src = images[index];
-
-index = (index + 1) % images.length;
-
-}
-
-setInterval(updateImage, 2000);
